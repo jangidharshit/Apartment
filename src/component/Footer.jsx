@@ -35,13 +35,12 @@ const Footer = () => {
         <nav>
           <h4>Quick Links</h4>
           <ul className="footer-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#apartments">Apartments</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="/#home">Home</a></li>
+            <li><a href="/#apartments">Apartments</a></li>
+            <li><a href="/#gallery">Gallery</a></li>
+            <li><a href="/#contact">Contact</a></li>
           </ul>
         </nav>
-
         <div>
           <h4>Legal</h4>
           <ul className="footer-links">
