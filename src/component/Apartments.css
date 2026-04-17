@@ -1,0 +1,136 @@
+.apartments {
+  padding: 120px 5%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.apartments .section-title {
+  text-align: center;
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  color: var(--black);
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.apartments .section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: var(--gold);
+}
+
+.apartments .section-subtitle {
+  text-align: center;
+  font-size: 1.3rem;
+  color: var(--gray);
+  max-width: 600px;
+  margin: 0 auto 4rem;
+  font-weight: 300;
+}
+
+.swiper {
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.apt-card {
+  width: 100%;
+  max-width: 380px;
+  background: var(--white);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: all 0.4s ease;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.apt-card:hover {
+  transform: translateY(-20px) scale(1.02);
+  box-shadow: var(--shadow-hover);
+}
+
+.apt-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.apt-card:hover .apt-image {
+  transform: scale(1.1);
+}
+
+.apt-content {
+  padding: 2rem;
+}
+
+.apt-title {
+  font-size: 1.6rem;
+  color: var(--black);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.apt-price {
+  font-size: 1.8rem;
+  color: var(--gold);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.apt-desc {
+  color: var(--gray);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.apt-cta {
+  color: var(--gold);
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.apt-cta:hover {
+  color: var(--gold-dark);
+}
+
+.swiper-pagination-bullet {
+  background: var(--gold);
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+@media (min-width: 1200px) {
+  .swiper-wrapper {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+  
+  .swiper-slide {
+    width: auto !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .apartments {
+    padding: 80px 5%;
+  }
+}
